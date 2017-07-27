@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <!--<ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/imageView6" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/detailslinearlayout"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pid"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/grey"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="14sp"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/heart"
+        android:gravity="end"
+        />
+
+</LinearLayout>

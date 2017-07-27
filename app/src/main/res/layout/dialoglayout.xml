@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:text="Enter the quantity you want to enquire :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:text="Other Enquiry :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments"
+            android:imeActionId="@+id/comments"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textLongMessage"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="confirm"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/confirm"
+        />
+    <Button
+        android:text="cancel"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/cancel"
+        android:layout_toRightOf="@+id/confirm"/>
+</RelativeLayout>
+
+</LinearLayout>

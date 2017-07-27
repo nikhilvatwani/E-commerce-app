@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itmightys.ecommerce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ActualProduct"
+            android:label="@string/title_activity_actual_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllProducts"
+            android:label="@string/title_activity_all_products"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" />
+        <activity
+            android:name=".Wishlist"
+            android:label="@string/title_activity_wishlist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllCategory"
+            android:label="@string/title_activity_all_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.API_KEY"
+            android:value="AIzaSyCn29sdbaoMV_k9AzQWTM9rjJ6sYwEEpVE" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD-r60lEg2caKH4WHrTPa4ZkxFlvnVE7Qg" />
+
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" />
+        <activity
+            android:name=".SubCategory"
+            android:label="@string/title_activity_sub_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddRoom"
+            android:label="@string/title_activity_add_room"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatRoom"
+            android:label="@string/title_activity_chat_room"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

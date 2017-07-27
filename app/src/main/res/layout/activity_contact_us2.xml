@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent_grey">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:context="com.itmightys.ecommerce.ContactUs"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTAL ADDRESS"
+                android:textSize="15sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:paddingLeft="15dp"
+                android:textColor="#4b4b50"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORPORATE ADDRESS"
+                android:textSize="15sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:paddingLeft="15dp"
+                android:textColor="#4b4b50"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT INFO"
+                android:textSize="15sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:paddingLeft="15dp"
+                android:textColor="#4b4b50"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="3dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phonedialer"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#4975ca"
+                    android:text="18002089898"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="3dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phonedialer"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#4975ca"
+                    android:text="(1024)6150000"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/map"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact no. : "
+            android:id="@+id/email1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            android:id="@+id/address1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-105, Regency Plaza, Shanti Nagar, Kalyan(W)"
+            android:id="@+id/address2"
+            android:layout_below="@+id/contact2"
+            android:layout_toRightOf="@+id/contact1"
+            android:layout_toEndOf="@+id/contact1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ecommerce@gmail.com"
+            android:id="@+id/email2"
+            android:layout_toRightOf="@+id/contact1"
+            android:layout_toEndOf="@+id/contact1"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            android:id="@+id/contact1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9552799639 / 9322758441"
+            android:id="@+id/contact2"
+            android:layout_below="@+id/email2"
+            android:layout_toRightOf="@+id/email1"
+            android:layout_toEndOf="@+id/email1" />
+
+    </RelativeLayout>-->
+</ScrollView>

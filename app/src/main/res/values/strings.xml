@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">E commerce</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_actual_product">ActualProduct</string>
+    <string-array name="sizes">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXl</item>
+    </string-array>
+    <string name="title_activity_all_products">AllProducts</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_sign_up">Sign Up or Register</string>
+    <string name="title_activity_wishlist">Wishlist</string>
+    <string name="title_activity_all_category">All Category</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_contact_us1">ContactUs1</string>
+    <string name="title_activity_contact_us123">ContactUs123</string>
+    <string name="title_activity_sub_category">SubCategory</string>
+    <string name="title_activity_add_room">Add Room</string>
+    <string name="title_activity_chat_room">Chat Room</string>
+</resources>

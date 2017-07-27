@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:orderInCategory="100"
+        android:icon="@drawable/male4"
+        compat:showAsAction="always|collapseActionView"></item>
+    <item
+        android:id="@+id/action_wishlist"
+        android:title="Wishlist"
+        android:orderInCategory="100"
+        android:icon="@drawable/heart4"
+        compat:showAsAction="always|collapseActionView"></item>
+\    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:icon="@drawable/heart2"
+        compat:actionViewClass="android.support.v7.widget.SearchView"
+        compat:showAsAction="always|collapseActionView"></item>
+
+
+</menu>
